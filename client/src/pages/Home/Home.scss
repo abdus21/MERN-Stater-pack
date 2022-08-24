@@ -1,0 +1,213 @@
+.home-container{
+    padding: 0px 13px;
+    padding-top: 20px;
+    background-color: #f0f2f5;
+
+    .home-wraper{
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+
+
+        .home-left{
+            flex-basis: 27%;
+            position: sticky;
+            top: 70px;
+            align-self: flex-start;
+
+
+        }
+
+        .home-middle{
+            flex-basis: 43%;
+
+            .post-card{
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 0 1px 2px rgb(225, 225, 225);
+                border: 1px solid #d7d7d7;
+                margin-bottom: 13px;
+                .post-detals{
+                    padding: 10px 15px 0px;
+                    .post-card-header{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .post-card-header-user-detals{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+
+                            img{
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                            }
+
+                            .detals{
+                                
+
+                                .post-user-name{
+                                    color: black;
+                                    font-weight: 500;
+                                    font-size: 20px;
+                                    display: block;
+                                }
+
+                                .post-duration{
+                                    font-size: 14px;
+                                    color: rgb(137, 137, 137);
+                                    display: block;
+                                    margin-top: -4px;
+                                }
+                            }
+                        }
+
+                        .save-vedio-link{
+                            border: none;
+                            background-color: transparent;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+
+                            &:hover{
+                                background-color: rgb(225, 225, 225);
+                            }
+                        }
+                    }
+
+                    .paragraph{
+                        font-size: 16px;
+                        margin-bottom: 0px;
+                        padding: 10px 0px;
+                    }
+                }
+
+                .feature-content{
+                    border-top: 2px solid #d7d7d7;
+                    border-bottom: 2px solid #d7d7d7;
+                }
+
+                .like-comment-share{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px 0px;
+                    border-bottom: 1px solid #d7d7d7;
+                    width: 95%;
+                    margin: auto;
+
+                    .like{
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+
+                        button{
+                            border: none;
+                            background-color: transparent;
+                            color: rgb(86, 86, 86);
+                            font-size: 16px;
+
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    .comment-share{
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+
+                        button{
+                            border: none;
+                            background-color: transparent;
+                            color: #606770;
+                            font-size: 16px;
+                            font-weight: 300;
+
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                .post-like-commnet{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 7px 0px;
+                    width: 95%;
+                    margin: auto;
+
+                    .post-like{
+                        width: 180px;
+                        margin: auto;
+                        text-align: center;
+
+                        &:hover{
+                            background-color: #f5f5f5;
+                        }
+
+                        button{
+                            border: none;
+                            background-color: transparent;
+                            color: #858a90;
+                            font-size: 17px;
+                            width: 100%;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .post-comment{
+                        width: 180px;
+                        margin: auto;
+                        text-align: center;
+
+                        &:hover{
+                            background-color: #f5f5f5;
+                        }
+
+                        button{
+                            border: none;
+                            background-color: transparent;
+                            color: #858a90;
+                            font-size: 17px;
+                            width: 100%;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .post-share{
+                        width: 180px;
+                        margin: auto;
+                        text-align: center;
+                        
+                        &:hover{
+                            background-color: #f5f5f5;
+                        }
+
+                        button{
+                            border: none;
+                            background-color: transparent;
+                            color: #858a90;
+                            font-size: 17px;
+                            width: 100%;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .home-right{
+            flex-basis: 27%;
+            position: sticky;
+            top: 70px;
+            align-self: flex-start;
+            z-index: 0;
+
+        }
+    }
+}

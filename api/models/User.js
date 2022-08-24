@@ -20,22 +20,22 @@ const UserSchema = mongoose.Schema({
     },
     cell : {
         type : String,
-        required : true,
         trim : true,
-        unique : true
     },
     password : {
         type : String,
         required : true,
         trim : true,
-        unique : true
+    },
+    isVerify : {
+        type : Boolean,
+        default : false
     },
     photo : {
         type : String,
     },
     age : {
         type : Number,
-        required : true,
     },
     gender : {
         type : String,

@@ -6,7 +6,7 @@ import userRouter from './routers/userRouter.js';
 import mongoDBConnection from './config/db.js';
 import errorHandler from './middlewares/errorHandler.js';
 import cookieParser from 'cookie-parser';
-
+import cors from 'cors'
 
 // init express
 const app = express()
@@ -15,7 +15,8 @@ dotenv.config();
 // middleware impliment
 app.use(express.json())
 app.use(express.urlencoded({extended:false}));
-app.use(cookieParser())
+app.use(cookieParser());
+app.use(cors());
 
 
 
